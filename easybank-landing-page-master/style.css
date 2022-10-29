@@ -1,0 +1,192 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+/* :root{
+    text-color:var(--hsl(233, 26%, 24%))
+} */
+
+/* html {
+  scroll-behavior: smooth;
+
+}
+
+nav {
+  background-color: #fff;
+}
+
+.navbar {
+  width: 90%;
+  height: 8vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  padding: 0 10px;
+}
+
+.navbar ul li a {
+  color: hsl(233, 26%, 24%);
+  text-decoration: none;
+}
+
+.btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+}
+
+.btn:hover {
+  background-color: hsl(233, 8%, 62%);
+}
+
+main {
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+}
+
+.home-image {
+  position: relative;
+  top: -200px;
+  right: -100px;
+}
+
+.home-img {
+  z-index: 0.1;
+}
+
+.bg-intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+} */
+
+/* - Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+
+### Neutral
+
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%) */
+
+/* Link of Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+/* Variable */
+:root {
+  /* Colors */
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --lime-green: hsl(136, 65%, 51%);
+  --dark-blue: hsl(233, 26%, 24%);
+  --white: hsl(0, 0%, 100%);
+
+  /* spacing */
+  --px: 20px;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+html {
+  font-family: "Public Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img,
+span,
+svg {
+  display: block;
+}
+
+/* main */
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar {
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px var(--px);
+}
+
+.navbar-toggle-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 20px;
+}
+
+.navbar-toggle-btn span {
+  display: block;
+  background: var(--dark-blue);
+  width: 25px;
+  height: 1px;
+  transition: 0.25s ease;
+}
+
+.navbar-toggle-btn.active .one {
+  transform: rotate(45deg) translateY(3px);
+}
+.navbar-toggle-btn.active .two {
+  display: none;
+}
+.navbar-toggle-btn.active .three {
+  transform: rotate(-45deg) translateY(-3px);
+}
